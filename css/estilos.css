@@ -106,6 +106,12 @@ main h1, main h2 {
     text-align: center;
 }
 
+.descricao-produto{
+    color: var(--cor-branca);
+    padding: center;
+    text-align: center;
+}
+
 .footer {
     background-color: var(--cor-principal);
     color: var(--cor-branca);
@@ -161,6 +167,21 @@ main h1, main h2 {
 
 .hero {
     text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding: 0; 
+}
+
+.video-lancamento {
+    background-color: #000; 
+}
+
+.video-lancamento .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .hero img {
