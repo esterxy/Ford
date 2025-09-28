@@ -318,6 +318,7 @@ main {
 
 .contato-imagem {
     width: 60%;
+    margin-top: 50px;
 }
 
 .contato-imagem img {
@@ -330,6 +331,7 @@ main {
 
 .contato-formulario {
     width: 40%;
+    margin-top: 70px;
 }
 
 .form-group {
