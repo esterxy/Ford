@@ -33,61 +33,69 @@
                 <p class="descricao-produto">Descubra a força, tecnologia e robustez que só a nova geração da Ford Ranger pode oferecer. Pronta para qualquer desafio, em qualquer terreno.</p>
             </div>
         </section>
-
         <div class="container">
             <section class="secao-modelos">
                 <br><br>
                 <h2>Compare os Modelos</h2>
-                <form>
-                    <div class="modelos-container">
+                
+                <table class="modelos-tabela-cards">
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Motor/Tração</th>
+                            <th>Preço Sugerido</th>
+                            <th>Selecionar para Comparar</th>
+                            <th>Mais Informações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modelo-card-linha">
+                            <td>
+                                <img src="img/XL Cabine.jpg" alt="Ranger Cabine Simples">
+                                <h4>XL Cabine Simples 2.2 Diesel</h4>
+                            </td>
+                            <td data-label="Motor/Tração">2.2 Diesel</td>
+                            <td data-label="Preço Sugerido">R$ 239.990</td>
+                            <td data-label="Selecionar">
+                                <input type="checkbox" id="modelo1" name="comparar[]" value="modelo1">
+                                <label for="modelo1">Selecionar</label>
+                            </td>
+                            <td data-label="Informações"><img src="img/info.png" alt="Mais informações" class="info-icon"></td>
+                        </tr>
                         
-                        <div class="modelo-item">
-                            <img src="img/XL Cabine.jpg" alt="Ranger Cabine Simples">
-                            <div class="modelo-info">
-                                <input type="checkbox" id="modelo1" name="modelo1">
-                                <div class="modelo-texto-info">
-                                    <label for="modelo1">
-                                        <h4>XL Cabine Simples 2.2 Diesel</h4>
-                                        <p>Preço Sugerido: R$ 239.990</p>
-                                    </label>
-                                    <img src="img/info.png" alt="Mais informações" class="info-icon">
-                                </div>
-                            </div>
-                        </div>
+                        <tr class="modelo-card-linha">
+                            <td>
+                                <img src="img/xls 2.2 diesel.jpg" alt="Ranger Cabine Dupla">
+                                <h4>XLS 2.2 Diesel 4x4</h4>
+                            </td>
+                            <td data-label="Motor/Tração">2.2 Diesel 4x4</td>
+                            <td data-label="Preço Sugerido">R$ 289.990</td>
+                            <td data-label="Selecionar">
+                                <input type="checkbox" id="modelo2" name="comparar[]" value="modelo2">
+                                <label for="modelo2">Selecionar</label>
+                            </td>
+                            <td data-label="Informações"><img src="img/info.png" alt="Mais informações" class="info-icon"></td>
+                        </tr>
                         
-                        <div class="modelo-item">
-                            <img src="img/xls 2.2 diesel.jpg" alt="Ranger Cabine Dupla">
-                            <div class="modelo-info">
-                                <input type="checkbox" id="modelo2" name="modelo2">
-                                <div class="modelo-texto-info">
-                                    <label for="modelo2">
-                                        <h4>XLS 2.2 Diesel 4x4</h4>
-                                        <p>Preço Sugerido: R$ 289.990</p>
-                                    </label>
-                                    <img src="img/info.png" alt="Mais informações" class="info-icon">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="modelo-item">
-                            <img src="img/storm.jpg" alt="Ranger Storm">
-                            <div class="modelo-info">
-                                <input type="checkbox" id="modelo3" name="modelo3">
-                                <div class="modelo-texto-info">
-                                    <label for="modelo3">
-                                        <h4>Storm 3.2 Diesel 4x4 AT</h4>
-                                        <p>Preço Sugerido: R$ 308.190</p>
-                                    </label>
-                                    <img src="img/info.png" alt="Mais informações" class="info-icon">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button type="button" class="btn-comparar">Comparar Itens</button>
-                </form>
+                        <tr class="modelo-card-linha">
+                            <td>
+                                <img src="img/storm.jpg" alt="Ranger Storm">
+                                <h4>Storm 3.2 Diesel 4x4 AT</h4>
+                            </td>
+                            <td data-label="Motor/Tração">3.2 Diesel 4x4 AT</td>
+                            <td data-label="Preço Sugerido">R$ 308.190</td>
+                            <td data-label="Selecionar">
+                                <input type="checkbox" id="modelo3" name="comparar[]" value="modelo3">
+                                <label for="modelo3">Selecionar</label>
+                            </td>
+                            <td data-label="Informações"><img src="img/info.png" alt="Mais informações" class="info-icon"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <button type="button" class="btn-comparar">Comparar Itens</button>
             </section>
+        </div>
         </div>
     </main>
 
@@ -107,7 +115,8 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
+
+
 
